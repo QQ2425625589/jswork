@@ -1,4 +1,4 @@
-function animate(obj, option){
+function animate(obj,option){
     clearInterval(obj.timer);
     obj.timer=setInterval(function(){
         var flag=true;
@@ -11,7 +11,7 @@ function animate(obj, option){
             obj.style[k]=leader+'px';
             if(leader!=target){
                 flag=false;
-            }
+            }    
         }
         if(flag){
             clearInterval(obj.timer);
@@ -27,5 +27,6 @@ function getStyle(obj,attr){
 }
 var obj=document.getElementById('box');
 obj.onclick=function(){
-    animate(obj,{'left':200,'top':50});
+    animate(obj,{'left':Math.random()*1903,'top':Math.random()*937});
 };
+ 
