@@ -29,7 +29,7 @@ $(function () {
     });
     $('.prev').click(function () {
         --i;
-        if (i == -i) {
+        if (i == -1) {
             i = $('.hot li').length - 2;
             $('.hot').css({
                 left: -($('.hot li').length - 1) * width
